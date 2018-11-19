@@ -1,0 +1,162 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[14pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Shangyue}{Zhu}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{09 Fischer Graduate Reside Apt1C}{Notre Dame}{IN 46556}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(765)~760~7439}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{szhu7@nd.edu}                               % optional, remove / comment the line if not wanted
+\homepage{shangyuezhu.github.io}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[70pt][0.7pt]{avtavar}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\bibliography{Ref.bib}
+\bibliographystyle{abbrv}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2018--Present}{Ph.D. program in Computer Science}{University of Notre Dame}{}{\textit{}}
+{Research assistant. Assist in research projects on Wi-Fi , cellular protocol\\
+}  % arguments 3 to 6 can be left empty
+\bigskip
+\cventry{2015--2017}{Master Degree in Computer Science}{Ball State University}{}{\textit{GPA: 3.88/4.0}}
+{1.	Research assistant. Assist in research projects on smart homes, smart health and IoT.\\
+2.	Teaching assistant. Assist in the creation of exercise questions. Set office hours for questions and answers.
+}  % arguments 3 to 6 can be left empty
+\bigskip
+\cventry{2012--2014}{Bachelor Degree in Computer Science}{Ball State University}{}{\textit{GPA: 3.765/4.0}}{1.	Exchange student for (1+2+1) program. \\
+2. Dean’s List Award: 2013 Spring, 2013 summer, 2013 Fall, 2014 spring and 2014 Summer semester. 
+}
+\bigskip
+\cventry{2011--2015}{Bachelor Degree in Computer Science}{Xi’An University of Post \& Telecommunication}{}{}{Exchange student for (1+2+1) program to Ball State University. The program included one year in China, two-year in U.S.A, and the fourth year back to China to finish all degree courses. Both of two universities awarded graduate diploma. 
+}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Publications}
+\cventry{1}{Shangyue Zhu, \textrm{Hanqing Guo, Junhong Xu, Shaoen Wu}}{Distance Based User Localization and Tracking with Mechanical Ultrasonic Beamforming}{International Conference on Computing, Networking and Communications (ICNC), Maui, Hawaii, USA. March 5-8, 2018}{}{}
+\cventry{2}{Shangyue Zhu, \textrm{Junhong Xu, Hanqing Guo, Qiwei Liu, Shaoen Wu, Honggang Wang}}{Indoor Human Activity Recognition Based on Ambient Radar with Signal Processing and Machine Learning}{Submitted to IEEE ICC 2018}{}{}
+\cventry{3}{\textrm{Hanqing Guo, Junhong Xu,} Shangyue Zhu, \textrm{Shaoen Wu}}{Realtime Software Defined Self-Interference Cancellation Based on Machine Learning for In-Band Full Duplex Wireless Communications}{International Conference on Computing, Networking and Communications (ICNC), Maui, Hawaii, USA. March 5-8, 2018}{}{}
+\cventry{4}{\textrm{Junhong Xu, Hanqing Guo,} Shangyue Zhu, \textrm{Shaoen Wu}}{Avoidance of Manual Labeling in Robotic Autonomous Navigation Through Multi-Sensory Semi-Supervised Learning}{submitted to IEEE ICRA 2018 (Arxiv)}{}{}
+\cventry{5}{\textrm{Shaoen Wu, Jacob B. Rendall, Matthew J. Smith,} Shangyue Zhu, \textrm{Junhong Xu, Honggang Wang, Qing Yang, Pinle Qin}}{Survey on Prediction Algorithms in Smart Homes}{IEEE Internet of Things Journal, Vol.4, No.3, pp 636-644, June 2017}{}{}
+\cventry{6}{\textrm{Junhong Xu, Hanqing Guo,} Shangyue Zhu, \textrm{Shaoen Wu}}{A Deep Residual Convolutional Neural Network For Facial Keypoint Detection with Missing Labels}{Elsevier Signal Processing Journal, accepted, Oct. 2017}{}{}
+
+
+
+\section{Research Experience}
+%\subsection{Vocational}
+%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+  %\begin{itemize}%
+  %\item Sub-achievement (a);
+  %\item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+   % \begin{itemize}
+   % \item Sub-sub-achievement i;
+   % \item Sub-sub-achievement ii;
+   % \item Sub-sub-achievement iii;
+   % \end{itemize}
+ % \item Sub-achievement (c);
+  %\end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+
+\cventry{2017 May  -- 2017 Sep }{Activities Recognition in Smart home }{}{}{}{The research proposed a signals solution, Activities Recognition based on Signal Filter (ARSF), to recognize the human activates through commodity off-the-shelf radar sensors. The radar sensors detect abnormal and instantaneous motion situations by high frequency radio signal. The research purpose is to recognize the specific activities of residents in smart homes. During this project, I designed a motion separation algorithm, which extract the corresponding motion data from the whole data background. Developed an activity recognition system based on the distinct features, which distinguishes the distinct motions. }
+%\subsection{Miscellaneous}
+
+\cventry{2016--2017 Mar}{User Localization based on Ultrasonic Beamforming}{}{}{}{This research work designs and develops a noninvasive distance based user localization and tracking solution, DiLT, for smart systems. DiLT consists of a mechanical ultrasonic beam-forming design for omni-space sensing, a contrastive divergence learning to localize a user and a binary back-off algorithm to track the motion of the user. During this project, I designed an ultrasonic scanning platform to track the user’s location. Developed a location tracking algorithm to filter the environment and noise to identify the specific users’ location. }
+\bigskip
+\cventry{2015 Sep --2015 Dec }{Sequence-Based Software Specification}{}{}{}{This research is related to software development, which is a rigorous software specification method. This research focus on converting informal statements of functional requirements to precise software specifications. The purpose is to develop a formal system model for code development and testing.  }
+
+\section{Research Label}
+\cvlistitem{Smart Home}
+\cvlistitem{Activity Recognition}
+\cvlistitem{Machine Learning}
+\cvlistitem{Deep Learning}
+
+
+\section{Technique Skills}
+\cventry{}{Computer Languages: }{}{}{}{C++, C\#, Python, Javascript}
+\cventry{}{Hardware: }{}{}{}{Arduino Board, Ultrasonic Sensor, Walabot, Artik}
+\cventry{}{Tools: }{}{}{}{Linux Shell, Latex}
+
+
+\section{Internship Experience}
+\cventry{2015 Jan-- Mar}{Xi'AN Voyager Telecommunication Co., Ltd.}{}{}{}{The main work focuses on testing the router and switch equipment.
+}
+\cventry{2018 Feb-- July}{Figur8}{Boston}{}{}{The main work included App development, Network interface, Data Science
+}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5 }
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+
+                    % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
